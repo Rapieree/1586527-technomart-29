@@ -1,114 +1,198 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-  <header>
-    <div class="header-top">
-      <div class="container">
-        <a href="index.html">
-          ТЕХНОМАРТ
+<body class="page-body">
+  <header class="header-container">
+      
+    <div class="header-top-container">
+      <div class="header-top-menu">
+
+        <a class="header-logo" href="#">
+          <div class="header-logo-rectangle">
+            <img  class="header-logo-text" src="img/Logo-tech-text.svg" width="108" height="18" alt="Техномарт">         
+          </div>
         </a>
 
-        <p>
-          Поиск:
-        </p>
+        <form class="search-container" action="" method="get">
+          <input class="search-field" type="text" name="search-text" placeholder="Поиск:">
+          <input class="search-button" type="submit" name="search-button" value="">
+        </form>
 
-        <ul>
-          <li><a href="blank.html">Закладки:</a></li>
-          <li><a href="blank.html">Корзина:</a></li>
-          <li><a href="">Оформить заказ</a></li>
+        <ul class="product-navigation-list">
+          <a class="bookmark-link" href="blank.html">
+            <li class="bookmark-item">
+              <img class="bookmark-icon" src="img/icons/icon-bookmark.svg" width="14" height="16">
+              <span>Закладки: 0</span>
+            </li>
+          </a>
+          <a class="basket-link" href="blank.html">
+            <li class="basket-item">
+              <img class="basket-icon" src="img/icons/icon-basket.svg" width="15" height="15">
+              <span>Корзина: 0</span>
+            </li>
+          </a>
+
+          <a class="order-link" href="">
+            <li class="rectangle-to-order">
+              <span class="to-order-text">Оформить заказ</span>
+            </li>
+          </a>
         </ul>
+        
+
       </div>
+
     </div>
 
-    <div class="header-general-bottom">
-      <div class="container">
-        <div class="header-center">
-          <p>
-            Интернет-магазин строительных материалов и инструментов для ремонта
-          </p>
+    <div class="header-center-container">
+      
+      <span class="header-center-text">
+        Интернет-магазин<br>строительных материалов<br> и инструментов для ремонта
+      </span>
 
-          <div class="header-contacts">
-            <a href="#">+7 (812) 555-05-55</a>
-            <a href="#">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
-          </div>
-
-          <div class="header-authorization">
-            <button>Войти</button>
-            <a href="blank.html">Регистрация</a>
-          </div>
+      <div class="header-contacts">
+        <div class="rectangle-contacts-number">
+          <img class="icon-phone" src="/img/icons/icon-phone.svg" width="19" height="19">
+          <a class="header-contacts-number" href="#">+7 (812) 555-05-55</a>
         </div>
+        <a class="header-contacts-adress" href="#">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
+      </div>
 
-        <div class="header-navigation">
-          <nav>
-            <h3>Навигация</h3>
-            <ul>
-              <li><a href="index.html">Главная</a></li>
-              <li><a href="blank.html">Компания</a></li>
-              <li><a href="Catalog.html">Каталог</a></li>
-              <li><a href="blank.html">Новости</a></li>
-              <li><a href="blank.html">Спецпредложения</a></li>
-              <li><a href="blank.html">Доставка</a></li>
-              <li><a href="blank.html">Контакты</a></li>
-            </ul>
-          </nav>
+      <div class="header-authorization">
+        <div class="login-container">
+          <a href="blank.html">
+            <img class="icon-login" src="img/icons/icon-login.svg" width="20" height="17">
+            <span class="login-link">Войти</span>
+          </a>
+        </div>
+        <div class="registration-container">
+          <a href="blank.html">
+            <span class="registration-link">Регистрация</span>
+          </a>
         </div>
       </div>
+
     </div>
+
+        <nav class="header-navigation-container">
+          <ul class="header-navigation-list">
+            <li class="header-navigation-item"><a href="index.html">Главная</a></li>
+            <li class="header-navigation-item"><a href="blank.html">Компания</a></li>
+            <li class="header-navigation-item"><a href="Catalog.html">Каталог</a></li>
+            <li class="header-navigation-item"><a href="blank.html">Новости</a></li>
+            <li class="header-navigation-item"><a href="blank.html">Спецпредложения</a></li>
+            <li class="header-navigation-item"><a href="blank.html">Доставка</a></li>
+            <li class="header-navigation-item"><a href="blank.html">Контакты</a></li>
+          </ul>
+        </nav>
+
   </header>
 
-  <main>
+  <main class="main-page-content-container">
     <h1>Интернет-магазин инструмента и стройматериалов «Техномарт»</h1>
 
-    <div>
-      <a href="blank.html">Материалы - на любой вкус</a>
-      <a href="blank.html">Инструмент - на все случаи</a>
-      <a href="blank.html">Техника - для стройки</a>
+    
+    <div class="features-1">
+      <div class="features-materials features-external-container">
+        Материалы
+        <a href="blank.html">
+          <div class="features-inside-container">
+            <span>на любой вкус</span>
+          </div>
+        </a>
+      </div>
+
+      <a href="blank.html">
+        <div class="features-instruments features-external-container">
+          Инструмент
+          <div class="features-inside-container">
+            на все случаи
+          </div>
+        </div>
+      </a>
+      <a href="blank.html">
+        <div class="features-technics features-external-container">
+          Техника
+          <div class="features-inside-container">
+            для стройки
+          </div>
+        </div>
+      </a>
     </div>
 
-    <div>
-      <figure>
+    <div class="features-2">
+      <figure class="features-slider">
         <a href="Catalog.html">
+          <span class="features-slider-header-text">Перфораторы</span>
+          <span class="features-slider-subheader-text">
+            Настоящие мужские игрушки
+          </span>
           <img src="img/Preview1.png" width="620" height="266">
-          Открыть Каталог
+          <div class="slider-open-link-container red-link-container ">
+            <span class="features-slider-open-link">
+              Открыть каталог
+            </span>
+          </div>
         </a>
       </figure>
 
-      <a href="blank.html">Скидки 50% - на 350 товаров</a>
-      <a href="blank.html">Доставка - бесплатно</a>
+      <a href="blank.html">
+        <div class="features-sales features-external-container">
+          Скидки 50%
+          <div class="features-inside-container">
+            на 350 товаров
+          </div>
+        </div>
+      </a>
+
+      <a href="blank.html">
+        <div class="features-delivery features-external-container">
+          Доставка
+          <div class="features-inside-container">
+            бесплатно
+          </div>
+        </div>
+      </a>
     </div>
 
     <section>
       <div class="title-pop-products">
-        <h2>Популярные товары:</h2>
-        <a href="blank.html">Все популярные товары</a>
+        <div class="title-pop-text">Популярные товары:</div>
+        <a href="blank.html">
+          <div class="red-link-container">
+            <div class="title-pop-link-text">Все популярные товары</div>
+          </div>
+        </a>
       </div>
 
-      <ul>
-        <li>
+      <ul class="pop-products-list">
+        <li class="pop-products-item">
           <img src="img/bosch1.png" width="184" height="164">
           <h3>Перфоратор BOSCH BFG 9000</h3>
           <p><s>32500</s></p>
           <button>25500</button>
         </li>
-        <li>
+        <li class="pop-products-item">
           <img src="img/bosch2.png" width="127" height="112">
           <h3>Перфоратор BOSCH BFG 3000</h3>
           <p><s>22500</s></p>
           <button>15500</button>
         </li>
-        <li>
+        <li class="pop-products-item">
           <img src="img/bosch3.png" width="144" height="128">
           <h3>Перфоратор BOSCH BFG 6000</h3>
           <p><s>30500</s></p>
           <button>25500</button>
         </li>
-        <li>
+        <li class="pop-products-item">
           <img src="img/bosch4.png" width="127" height="112">
           <h3>Перфоратор BOSCH BFG 2000</h3>
           <button>15500</button>
@@ -225,7 +309,7 @@
         </p>
 
 
-        <div class="footer-nav-top">
+        <div class="footer-site-nav">
           <ul>
             <li><a href="blank.html">Компания</a></li>
             <li><a href="blank.html">Новости</a></li>
@@ -235,7 +319,7 @@
           </ul>
         </div>
 
-        <div class="footer-nav-bottom">
+        <div class="footer-product-nav">
           <ul>
             <li><a href="blank.html">Материалы</a></li>
             <li><a href="blank.html">Техника</a></li>
