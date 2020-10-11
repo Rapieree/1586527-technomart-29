@@ -1,5 +1,43 @@
 
 
+:root
+{
+    --basic-red: #EE3643;
+    --hover-button-red: #CA2C37;
+    --active-button-red: #BA2732;
+
+    --basic-green: #63A63E;
+    --hover-button-green: #5FBB2D;
+    --active-button-green: #518534;
+
+    --basic-black: #000000;
+    --lighter-black: #161D29;
+    --opacity-black: rgba(0, 0, 0, 0.25);
+
+    --lighter-blue: #32425C;
+    --darker-blue: #293449;
+    --darkest-blue: #1D2739;
+
+    --basic-background-gray: #F1F5F7;
+    --basic-extra-background-gray: #F7F3EC;
+    --gray-neutral: #F9F5F0;
+
+    --basic-white: #FFFFFF;
+
+    --opacity-white: rgba(255, 255, 255, 0.3);
+    --hover-button-greylight: rgba(197, 197, 197, 0.3);
+    --active-button-greylight: rgba(169, 169, 169, 0.3);
+
+    --features-item-orange: #FFBF47;
+    --features-item-blue: #3BBCE3;
+    --features-item-pink: #DC91D8;
+    --features-item-green: #8ED78F;
+    --features-item-ginger: #FFC047;
+
+
+    
+}
+
 .page
 {
     height: 100%;
@@ -16,15 +54,14 @@
 body
 {
    max-width: 1200px;
-   min-width: 960px;
    margin: 0;
    padding: 0;
-   background-color: rgba(0, 0, 0, 0.0001);
+   background-color: var(--basic-white);
    background-position: top center;
    background-repeat: no-repeat;
    font-family: "Cuprum";
    font-size: 18px;
-   color: black;
+   color: var(--basic-black);
    line-height: 24px;
 }
 
@@ -63,7 +100,7 @@ img
 .header-container
 {
     height: 100%;
-    background-image: url("/img/top-background.png");
+    background: var(--basic-background-gray);
 }
 
 /* Верхная часть хедера
@@ -75,7 +112,7 @@ img
 .header-top
 {
     height: 42px;
-    background-color: #293449;
+    background-color: var(--darker-blue);
 }
 
 .header-top .container
@@ -89,7 +126,7 @@ img
     width: 220px;
     height: 47px;
 
-    background-color: #EE3643;
+    background-color: var(--basic-red);
     box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
@@ -108,7 +145,7 @@ img
 
 .header-logo a:active
 {
-    background-color: #BA2732;
+    background-color: var(--active-button-red);
     box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 /* ==========================================================*/
@@ -149,7 +186,7 @@ img
     border: none;
     outline: none;
 
-    color: black;
+    color: var(--basic-black);
     font-size: 18px;
     line-height: 24px;
     opacity: 30%;
@@ -159,14 +196,14 @@ img
 /* Состояния при взаимодействии*/
 .search-field::placeholder
 {
-    color: white;
+    color: var(--basic-white);
     font-size: 18px;
     line-height: 24px;
 }
 
 .search-container:focus-within
 {
-    background-color: white;
+    background-color: var(--basic-white);
 }
 
 
@@ -215,7 +252,7 @@ a
 {
     font-size: 18px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: var(--basic-white);
 
 
     position: relative;
@@ -269,24 +306,24 @@ a
 
 .bookmark-link:active
 {
-    background: #161D29;
+    background: var(--lighter-black);
 }
 
 /* Кнопка оформить заказ*/
 .to-order-link
 {
-    background-color: #63A63E;
+    background-color: var(--basic-green);
 }
 
 .to-order-link:hover
 {
-    background-color: #5FBB2D;
+    background-color: var(--hover-button-green);
 }
 
 .to-order-link:active
 {
     color: rgba(255, 255, 255, 0.5);
-    background: #63A63E;
+    background: var(--basic-green);
 }
 
 
@@ -323,7 +360,7 @@ a
     padding: 0;
     font-size: 16px;
     line-height: 23px;
-    color: #EE3643;
+    color: var(--basic-red);
     font-style: italic;
 
     position: absolute;
@@ -351,7 +388,7 @@ a
  {
     width: 270px;
     height: 45px;
-    border: 3px solid #FFFFFF;
+    border: 3px solid var(--basic-white);
     box-sizing: border-box;
 
     padding-left: 71px;
@@ -375,7 +412,7 @@ a
  .header-contacts-number a
  {
      position: relative;
-     color: #EE3643;
+     color: var(--basic-red);
 
      font-weight: bold;
      font-size: 21px;
@@ -388,7 +425,7 @@ a
     font-size: 14px;
     line-height: 24px;
 
-    color: #32425C;
+    color: var(--lighter-blue);
  }
 
 /* Средний хедер Авторизация
@@ -414,11 +451,11 @@ a
 
     width: 121px;
     height: 45px;
-    background-color: white;
+    background-color: var(--basic-white);
 
     font-size: 21px;
     line-height: 21px;
-    color: black;
+    color: var(--basic-black);
 
     margin-right: 10px;
 }
@@ -431,11 +468,11 @@ a
 
     width: 150px;
     height: 45px;
-    background-color: white;
+    background-color: var(--basic-white);
 
     font-size: 21px;
     line-height: 21px;
-    color: black;
+    color: var(--basic-black);
 }
 
 .login-link::before
@@ -453,7 +490,7 @@ a
 
 .login-link:hover, .registration-link:hover
 {
-    color: #EE3643;
+    color: var(--basic-red);
 }
 .login-link:hover::before
 {
@@ -474,19 +511,21 @@ a
 
 .authorization-success
 {
+    width: 299px;
 }
 
 .username-wrapper
 {
-    width: 299px;
     height: 45px;
-    background: white;
+    background: var(--basic-white);
 
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 17px;
+
+    margin-bottom: 7px;
 }
 
 .username-text
@@ -531,7 +570,7 @@ a
 {
     font-size: 16px;
     line-height: 18px;
-    color: #32425C;
+    color: var(--lighter-blue);
 }
 .my-orders-link
 {
@@ -555,14 +594,14 @@ a
     width: 4px;
     height: 4px;
     border-radius: 2px;
-    background: linear-gradient(0deg, #32425C, #32425C);
+    background: linear-gradient(0deg, var(--lighter-blue), var(--lighter-blue));
     margin-left: 14px;
     margin-right: 14px;
 }
 
 .my-orders-link:hover, .account-management:hover
 {
-    color: #EE3643;
+    color: var(--basic-red);
 }
 
 .my-orders-link:active, .account-management:active
@@ -593,8 +632,8 @@ a
 .header-navigation .container
 {
     height: 60px;
-    background-color: #32425C;
-    box-shadow: inset 0px -5px 0px #293449;
+    background-color: var(--lighter-blue);
+    box-shadow: inset 0px -5px 0px var(--darker-blue);
     margin-bottom: 60px;
 
 }
@@ -627,7 +666,7 @@ a
 
     font-size: 18px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: var(--basic-white);
 
 }
 
@@ -639,15 +678,15 @@ a
 .header-navigation-item:hover
 {
 
-    background: #293449;
-    box-shadow: inset 0px -5px 0px #293449;
+    background: var(--darker-blue);
+    box-shadow: inset 0px -5px 0px var(--darker-blue);
 }
 
 .header-navigation-item:active
 {
 
-    background: #1D2739;
-    box-shadow: inset 0px -5px 0px #293449;
+    background: var(--darkest-blue);
+    box-shadow: inset 0px -5px 0px var(--darker-blue);
     opacity: 50%;
 }
 
@@ -674,17 +713,6 @@ a
 ===================================================================
 ===================================================================*/
 
-.container-940
-{
-    margin-right: 130px;
-    margin-left: 130px;
-    width: 940px;
-}
-
-.main-container
-{
-    width: 1200px;
-}
 /* Блок с особенностями(+ Слайдер)
 ==================================================================*/
 
@@ -704,7 +732,7 @@ a
   {
       width: 100px;
       height: 30px;
-      background-color: #EE3643;
+      background-color: var(--basic-red);
       
       transform: rotate(45deg);
       display: flex;
@@ -720,7 +748,7 @@ a
     content: "NEW";
     font-size: 14px;
     line-height: 18px;
-    color: white;
+    color: var(--basic-white);
     
   }
 
@@ -735,7 +763,7 @@ a
 
 .features-materials
 {
-    background-color: #FFBF47;
+    background-color: var(--features-item-orange);
     grid-row: 1;
     grid-column: 1;
 
@@ -749,7 +777,7 @@ a
 {
     grid-row: 1;
     grid-column: 3;
-    background: #3BBCE3;
+    background-color: var(--features-item-blue);
 
     background-image: url("/img/icons/features/icon-instruments.svg");
     background-repeat: no-repeat;
@@ -761,7 +789,7 @@ a
 {
     grid-row: 1;
     grid-column: 5;
-    background: #DC91D8;
+    background-color: var(--features-item-pink);
 
     background-image: url("/img/icons/features/icon-technics.svg");
     background-repeat: no-repeat;
@@ -773,7 +801,7 @@ a
 {
     grid-row: 3;
     grid-column: 5;
-    background: #8ED78F;
+    background: var(--features-item-green);
 
     background-image: url("/img/icons/features/icon-sales.svg");
     background-repeat: no-repeat;
@@ -785,7 +813,7 @@ a
 {
     grid-row: 5;
     grid-column: 5;
-    background: #FFC047;
+    background-color: var(--features-item-ginger);
 
     background-image: url("/img/icons/features/icon-delivery.svg");
     background-repeat: no-repeat;
@@ -803,7 +831,7 @@ a
     font-size: 24px;
     line-height: 30px;
 
-    color: #FFFFFF;
+    color: var(--basic-white);
 }
 
 .features-item-link
@@ -813,7 +841,7 @@ a
     align-items: center;
 
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--basic-white);
     font-size: 14px;
     line-height: 18px;
 
@@ -821,18 +849,18 @@ a
     width: 135px;
     height: 38px;
 
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: var(--opacity-white);
  
 }
 
 .features-item-link:hover
 {
-    background: rgba(197, 197, 197, 0.3);
+    background-color: var(--hover-button-greylight)
 }
 
 .features-item-link:active
 {
-    background: rgba(169, 169, 169, 0.3)
+    background-color: var(--active-button-greylight)
 }
 
 
@@ -877,7 +905,7 @@ a
     top:0;
     right: 0;
     height: 81px;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: var(--opacity-black);
     padding-left: 24px;
     padding-top: 23px;
 }
@@ -891,7 +919,7 @@ a
     line-height: 36px;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: var(--basic-white);
     margin-bottom: 5px;
     position: absolute;
     left: 24px;
@@ -905,7 +933,7 @@ a
     font-size: 18px;
     line-height: 24px;
 
-    color: #FFFFFF;
+    color: var(--basic-white);
     position: absolute;
     top: 64px;
     left: 24px;
@@ -947,7 +975,7 @@ a
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
-    color: white;
+    color: var(--basic-white);
 
     position: absolute;
     left: 24px;
@@ -972,7 +1000,7 @@ a
     height: 10px;
     border-radius: 50%;
     cursor: pointer;
-    background-color: white;
+    background-color: var(--basic-white);
 
     border: none;
     outline: none;
@@ -995,7 +1023,7 @@ a
     height: 6px;
     border-radius: 50%;
 
-    background-color: #EE3643;
+    background-color: var(--basic-red);
 }
 
 .features-slider-indicator-item:last-child
@@ -1025,7 +1053,7 @@ a
 {
     height: 89px;
 
-    background-color: #F9F5F0;
+    background-color: var(--gray-neutral);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1040,7 +1068,7 @@ a
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
-    color: #32425C;
+    color: var(--lighter-blue);
 }
 
 /* Красная кнопка макет*/
@@ -1050,15 +1078,15 @@ a
     justify-content: center;
     align-items: center;
 
-    background: #EE3643;
+    background: var(--basic-red);
 }
 .red-button:hover
 {
-    background: #CA2C37;
+    background: var(--hover-button-red);
 }
 .red-button:active
 {
-    background: #BA2732;
+    background: var(--active-button-red);
 }
 
 .pop-header-button
@@ -1079,7 +1107,7 @@ a
     line-height: 18px;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: var(--basic-white);
 }
 
 /* Популярные товары контент
@@ -1105,7 +1133,7 @@ a
 
 
     height: 100%;
-    background: #FFFFFF;
+    background: var(--basic-white);
     border: 1px solid #EAEAEA;
     box-sizing: border-box;
 
@@ -1130,7 +1158,7 @@ a
     font-size: 18px;
     line-height: 20px;
 
-    color: #000000;
+    color: var(--basic-black);
 
     text-align: center;
 
@@ -1160,7 +1188,7 @@ a
     bottom: 21px;
     width: 141px;
     height: 38px;
-    background-color: #EE3643;
+    background-color: var(--basic-red);
     position: absolute;
 
     font-family: "PT Sans";
@@ -1169,7 +1197,7 @@ a
     font-size: 17px;
     line-height: 18px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--basic-white);
 
     display: flex;
     align-items: center;
@@ -1183,7 +1211,7 @@ a
     position: absolute;
     right: -17px;
     content: "";
-    border: 19px solid white;
+    border: 19px solid var(--basic-white);
     border-left: 20px solid transparent;;
 }
 
@@ -1218,7 +1246,7 @@ a
     margin-right: 20px;
     margin-bottom: 20px;
 
-    background: #FFFFFF;
+    background: var(--basic-white);
     border: 1px solid #EAEAEA;
     box-sizing: border-box;
 
@@ -1258,7 +1286,7 @@ a
     padding-top: 40px;
 
     margin-top: 70px;
-    background-color: #F1F5F7;
+    background-color: var(--basic-background-gray);
 }
 
 .services-title
@@ -1269,7 +1297,7 @@ a
     line-height: 30px;
     text-transform: uppercase;
 
-    color: #000000;
+    color: var(--basic-black);
 }
 
 .services-subtitle
@@ -1282,7 +1310,7 @@ a
     font-size: 13px;
     line-height: 24px;
 
-    color: #000000;
+    color: var(--basic-black);
 }
 /* Слайдер в Сервиса
 ===============================================================*/
@@ -1326,7 +1354,7 @@ a
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
-    color: #32425C;
+    color: var(--lighter-blue);
 }
 
 .services-slider-subtitle
@@ -1345,7 +1373,7 @@ a
     font-size: 13px;
     line-height: 24px;
 
-    color: #000000;
+    color: var(--basic-black);
 }
 
 .services-controls
@@ -1362,8 +1390,8 @@ a
 {
     width: 240px;
     height: 61px;
-    background-color: #32425C;
-    box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+    background-color: var(--lighter-blue);
+    box-shadow: 0px 1px 0px var(--darker-blue), inset 0px 1px 0px #405069;
     outline: none;
     cursor: pointer;
 
@@ -1371,21 +1399,21 @@ a
     font-size: 21px;
     line-height: 30px;
 
-    color: #FFFFFF;
+    color: var(--basic-white);
     padding-left: 21px;
     text-align: left;
 }
 
 .services-controls-button:hover:not(.services-controls-current)
 {
-    background-color: #293449;
+    background-color: var(--darker-blue);
 }
 
 .services-controls-current 
 {
-    background-color: #FFFFFF;
-    box-shadow: 0px 1px 0px #FFFFFF;
-    color: #32425C;
+    background-color: var(--basic-white);
+    box-shadow: 0px 1px 0px var(--basic-white);
+    color: var(--lighter-blue);
 }
 
 
@@ -1436,7 +1464,7 @@ a
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
-    color: #000000;
+    color: var(--basic-black);
 
     margin-top: 24px;
     margin-bottom: 0;
@@ -1454,7 +1482,7 @@ a
 {
     font-size: 18px;
     line-height: 24px;
-    color: black;
+    color: var(--basic-black);
 
     display: flex;
     align-items: center;
@@ -1468,7 +1496,7 @@ a
     content: "";
     width: 25px;
     height: 3px;
-    background-color: #EE3643;
+    background-color: var(--basic-red);
     margin-right: 12px;
 }
 
@@ -1493,7 +1521,7 @@ a
 {
     font-size: 14px;
     line-height: 18px;
-    color: white;
+    color: var(--basic-white);
     text-transform: uppercase;
 
 }
@@ -1510,7 +1538,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 /* Первая строка топ футера*/
 .footer-top
 {
-    background-color: #32425C;
+    background-color: var(--lighter-blue);
 }
 
 
@@ -1519,7 +1547,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     width: 220px;
     height: 68px;
 
-    background-color: #EE3643;
+    background-color: var(--basic-red);
     box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 
     margin-right: 173px;
@@ -1559,7 +1587,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 {
     font-size: 18px;
     line-height: 24px;
-    color: white;
+    color: var(--basic-white);
 }
 
 .footer-site-nav-item a:hover
@@ -1579,7 +1607,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     font-size: 18px;
     line-height: 24px;
 
-    color: white;
+    color: var(--basic-white);
     margin-top: 22px;
     margin-left: 2px;
     margin-right: 92px;
@@ -1623,7 +1651,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 .footer-bottom
 {
-    background-color: #293449;
+    background-color: var(--darker-blue);
 }
 
 .footer-bottom .container
@@ -1640,12 +1668,23 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     padding-top: 2px;
     font-size: 16px;
     line-height: 18px;
-    color: #FFFFFF;
+    color: var(--basic-white);
 }
 
 .footer-feedback a, .footer-developer a
 {
     color: #FFD180;
+}
+
+.footer-feedback a:hover, .footer-developer a:hover
+{
+    text-decoration-line: underline;
+}
+
+.footer-feedback a:active, .footer-developer a:active
+{
+    color: var(--basic-red);
+    text-decoration-line: none;
 }
 
 .footer-social
@@ -1674,5 +1713,249 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 .social-button:hover
 {
-    background: #EE3643;
+    background: var(--basic-red);
 }
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+/* СТРАНИЦА КАТАЛОГА ТОВАРОВ*/
+
+.page-catalog + .container
+{
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    align-content: start;
+}
+
+
+/* Хлебные крошки*/
+.breadcrumbs-homepage
+{
+    display: block;
+    width: 14px;
+    height: 12px;
+    margin-top: 2px;
+
+    background-image: url("/img/icons/icon-home.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: transparent;
+}
+
+.page-catalog .breadcrumbs
+{
+    grid-column: 1 / -1;
+}
+
+.breadcrumbs
+{
+    list-style-type: none;
+    margin: 0;
+    margin-top: 21px;
+    margin-bottom: 20px;
+    padding: 0;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs li, .breadcrumbs a
+{
+    font-family: PT Sans;
+    font-size: 13px;
+    line-height: 18px;
+
+    text-transform: uppercase;
+    color: var(--basic-black);
+}
+.breadcrumbs li:not(:last-child)
+{
+    position: relative;
+    margin-right: 41px;
+}
+
+.breadcrumbs li::after
+{
+    content: "";
+    right: -23px;
+    top: 3px;
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    background-color: transparent;
+    background-image: url("/img/icons/icon-right-small.svg");
+}
+
+.breadcrumbs-current::after 
+{
+    display: none;
+}
+
+
+/* Заглавие страницы*/
+.page-catalog .page-title
+{
+    display: block;
+    padding-top: 29px;
+    padding-bottom: 30px;
+    padding-left: 29px;
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    
+    color: var(--lighter-blue);
+    background-color: var(--gray-extra-neutral);
+}
+
+/* Фильтры товаров*/
+
+.filters
+{
+    width: 220px;
+}
+
+.filters h2
+{
+    display: block;
+    margin: 0;
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+
+    color: var(--basic-black);
+
+    background-color: var(--basic-extra-background-gray);
+}
+
+.filters legend
+{
+    font-family: PT Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 30px;
+
+    color: var(--basic-black);
+}
+
+.filter-price
+{
+    margin: 0;
+    margin-top: 14px;
+    padding: 0;
+    border: none;
+}
+
+.range-filter
+{
+    margin-top: 11px;
+}
+
+.range-controls
+{
+    position: relative;
+    margin-bottom: 9px;
+    height: 41px;
+    padding-top: 39px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background-color: var(--basic-extra-background-gray);
+    border-radius: 5px;
+}
+
+.range-controls .scale
+{
+    height: 2px;
+    background: #d7dcde;
+}
+
+.range-controls .bar
+{
+    width: 70%;
+    height: 2px;
+    background-color: #00ca74;
+}
+
+.range-controls .toggle 
+{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border: 8px solid var(--basic-white);
+    background-color: #ababab;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min
+{
+    left: 18px;
+}
+  
+.range-controls .toggle-max 
+{
+    left: 160px;
+}
+
+.price-controls input
+{
+    width: 85px;
+    padding: 10px 0px;
+    padding-left: 10px;
+    text-align: center;
+    color: #283136;
+    border: none;
+    border-radius: 5px;
+    background-color:  var(--basic-extra-background-gray);
+    
+    text-transform: uppercase;
+    font-family: PT Sans;
+    font-size: 17px;
+    line-height: 18px;
+
+}
+
+.price-controls::after
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 5px);
+    width: 10px;
+    height: 1px;
+    background-color: var(--basic-black);
+}
+
+.price-controls
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
