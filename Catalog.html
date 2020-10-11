@@ -129,9 +129,9 @@
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
-                  <div class="bar"></div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
+                  <div class="bar" style="width:80%;"></div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
                 </div>
               </div>
 
@@ -145,6 +145,36 @@
               </div>
 
             </div>
+          </fieldset>
+
+          <fieldset class="filter-manufacturers">
+            <legend>ПРОИЗВОДИТЕЛИ:</legend>
+            <ul>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="bosch" id="filter-bosch" checked>
+                <label for="filter-bosch">bosch</label>
+              </li>
+
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="interscol" id="filter-interscol">
+                <label for="filter-interscol">интерскол</label>
+              </li>
+
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="makita" id="filter-makita" checked>
+                <label for="filter-makita">makita</label>
+              </li>
+
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="devalt" id="filter-devalt">
+                <label for="filter-devalt">devalt</label>
+              </li>
+
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hitachi" id="filter-hitachi">
+                <label for="filter-hitachi">hitachi</label>
+              </li>
+            </ul>
           </fieldset>
         </form>
       </section>
