@@ -1288,10 +1288,7 @@ a
 
 .services
 {
-    padding-left: 130px;
-    padding-right: 130px;
     padding-top: 40px;
-
     margin-top: 70px;
     background-color: var(--basic-background-gray);
 }
@@ -1722,4 +1719,3 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 {
     background: var(--basic-red);
 }
-
