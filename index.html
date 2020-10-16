@@ -18,11 +18,9 @@
     <div class="header-top">
       <div class="container">
 
-        <div class="header-logo">
-          <a href="#">
+          <a class="header-logo" href="#">
             <img class="header-logo-text" src="img/Logo-tech-text.svg" width="108" height="18" alt="Техномарт">
           </a>
-        </div>
 
 
         <form class="search-container" action="" method="get">
@@ -169,35 +167,58 @@
 
       <section class="pop-products">
         <div class="pop-header">
-          <span class="pop-header-title">популярные товары:</span>
-          <div class="pop-header-button red-button"><a href="#">все популярные товары</a></div>
+          <h2 class="pop-header-title">популярные товары:</h2>
+          <a class="pop-header-button red-button" href="#">все популярные товары</a>
         </div>
 
-        <ul class="pop-products-list">
+        <ul class="products-list">
           <li class="products-item">
+            <div class="products-item-hidden">
+              <button class="products-item-button-buy">Купить</button>
+              <button class="products-item-button-bookmark">В закладки</button>
+            </div>
+            <p class="products-item-image">
             <img src="/img/bosch1.png" width="184" height="164">
+            </p>
             <p class="products-item-name">Перфоратор BOSCH BFG 9000</p>
             <span class="products-item-old-price">32500 Р.</span>
             <p class="products-red-price">25500 Р.</p>
-
           </li>
           <li class="products-item">
+            <div class="products-item-hidden">
+              <button class="products-item-button-buy">Купить</button>
+              <button class="products-item-button-bookmark">В закладки</button>
+            </div>
             <div class="red-new-label"></div>
+            <p class="products-item-image">
             <img src="/img/bosch2.png" width="127" height="112">
+            </p>
             <p class="products-item-name">Перфоратор BOSCH BFG 3000</p>
-            <span class="products-item-old-price">32500 Р.</span>
+            <span class="products-item-old-price">22500 Р.</span>
             <p class="products-red-price">15500 Р.</p>
           </li>
           <li class="products-item">
+            <div class="products-item-hidden">
+              <button class="products-item-button-buy">Купить</button>
+              <button class="products-item-button-bookmark">В закладки</button>
+            </div>
+            <p class="products-item-image">
             <img src="/img/bosch3.png" width="144" height="128">
+            </p>
             <p class="products-item-name">Перфоратор BOSCH BFG 6000</p>
-            <span class="products-item-old-price">32500 Р.</span>
+            <span class="products-item-old-price">30500 Р.</span>
             <p class="products-red-price">25500 Р.</p>
           </li>
           <li class="products-item">
+            <div class="products-item-hidden">
+              <button class="products-item-button-buy">Купить</button>
+              <button class="products-item-button-bookmark">В закладки</button>
+            </div>
+            <div class="red-new-label"></div>
+            <p class="products-item-image">
             <img src="/img/bosch4.png" width="127" height="112">
+            </p>
             <p class="products-item-name">Перфоратор BOSCH BFG 2000</p>
-            <span class="products-item-old-price">32500 Р.</span>
             <p class="products-red-price">12500 Р.</p>
           </li>
         </ul>
@@ -207,8 +228,8 @@
       <section class="pop-manufacturers">
 
         <div class="pop-header">
-          <span class="pop-header-title">популярные производители:</span>
-          <div class="pop-header-button red-button"><a href="#">все производители</a></div>
+          <h2 class="pop-header-title">популярные производители:</h2>
+          <a class="pop-header-button red-button" href="#">все производители</a>
         </div>
 
         <ul class="pop-manufacturers-list">
@@ -349,11 +370,9 @@
       <div class="container">
 
         <div class="footer-top-row">
-          <div class="footer-logo">
-            <a href="#">
+            <a class="footer-logo" href="#">
               <img src="/img/Logo-text-footer.svg" width="138" height="23" alt="Техномарт">
             </a>
-          </div>
 
           <ul class="footer-site-nav-list">
             <li class="footer-site-nav-item"><a href="blank.html">Компания</a></li>
@@ -389,8 +408,7 @@
           Все права защищены
         </p>
 
-        <section class="footer-social">
-          <ul>
+          <ul class="footer-social">
             <li>
               <a class="social-button" href="#">
                 <svg width="26" height="15" viewBox="0 0 128 76">
@@ -416,7 +434,6 @@
               </a>
             </li>
           </ul>
-        </section>
 
         <p class="footer-feedback">
           Обратная связь:<br>
