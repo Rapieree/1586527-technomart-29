@@ -52,6 +52,8 @@
     --form-border: #ababab;
     --form-shadow: #0e0909;
     --form-gray: #283136;
+    --form-modal-gray: #F4F4F4;
+    --form-modal-lightgray: #F1F1F1;
     
 }
 
@@ -2512,3 +2514,257 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     font-size: 13px;
     line-height: 24px;
 }
+
+/* Модальные Окна Index.html
+=====================================================
+=====================================================
+=====================================================*/
+
+.modal 
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: none;
+    box-sizing: border-box;
+    border-top: 7px solid var(--basic-red);
+    background-color: var(--basic-white);
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+
+/* Модальное окно карта*/
+.modal-map
+{
+    width: 943px;
+    height: 449px;
+}
+
+.modal-map iframe 
+{
+    border: none;
+}
+
+.modal-show 
+{
+    display: block;
+    animation: bounce 0.6s;
+}
+  
+.modal-error 
+{
+    animation: shake 0.6s;
+}
+
+.modal-close 
+{
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    width: 21px;
+    height: 1px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after 
+{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -2px;
+  width: 27px;
+  height: 4px;
+  background-color: var(--basic-red);
+}
+
+.modal-close::before
+{
+    transform: rotate(45deg);
+}
+  
+.modal-close::after
+{
+    transform: rotate(-45deg);
+}
+
+/* Модальное окно Написать нам*/
+
+.modal-write-us
+{
+    width: 620px;
+    height: 430px;
+}
+
+.modal-write-us label
+{
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 11px;
+}
+
+
+.modal-write-us input, .modal-write-us textarea
+{
+    background-color: var(--basic-white);
+    border: 2px solid var(--basic-greylight);
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    padding-left: 12px;
+    padding-right: 8px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.modal-write-us input::placeholder, .modal-write-us textarea::placeholder
+{
+    font-family: PT Sans;
+    font-size: 13px;
+    line-height: 24px;
+
+    color: var(--oldprice-greylight);
+}
+
+.modal-write-us textarea
+{
+    height: 114px;
+}
+
+.write-us-top
+{
+    width: 460px;
+    margin: 0 auto;
+    margin-top: 39px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.write-us-item
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.write-us-item:first-child
+{
+    margin-right: 20px;
+    margin-bottom: 13px;
+}
+
+.write-us-bottom
+{
+    padding-top: 37px;
+    padding-bottom: 37px;
+    margin-top: 37px;
+    background-color: var(--form-modal-gray);
+}
+
+.write-us-bottom button
+{
+    margin: 0 auto;
+    width: 460px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+    font-size: 14px;
+    line-height: 18px;
+
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+
+.modal-write-us .modal-close
+{
+    right: 11px;
+    top: 21px;
+}
+
+/* Модальные Окна Catalog.html
+=====================================================
+=====================================================
+=====================================================*/
+
+.modal-basket
+{
+    width: 620px;
+    height: 282px;
+}
+
+.modal-basket .modal-close
+{
+    right: 11px;
+    top: 18px;
+}
+
+.modal-basket h3
+{
+    display: block;
+    width: 326px;
+    padding: 0;
+    margin: 0 auto;
+
+    margin-top: 66px;
+    text-align: center;
+
+    position: relative;
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--basic-black);
+}
+
+.modal-basket h3::before
+{
+    content: "";
+    width: 66px;
+    height: 66px;
+    background-image: url("/img/icons/icon-basket-success.svg");
+
+    position: absolute;
+    left: -66px;
+    top: -19px;
+}
+
+.modal-basket-buttons a, .modal-basket-buttons button
+{
+
+    margin-top: 37px;
+    margin-bottom: 37px;
+    width: 192px;
+    height: 38px;
+
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    color: var(--basic-white);
+}
+
+.modal-basket-buttons button
+{
+    margin-left: 10px;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    border: none;
+}
+
+.modal-basket-buttons
+{
+    margin-top: 67px;
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--form-modal-lightgray);
+}
+
+
