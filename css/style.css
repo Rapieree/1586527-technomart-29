@@ -1766,7 +1766,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     height: 12px;
     margin-top: 2px;
 
-    background-image: url("/img/icons/icon-home.svg");
+    background-image: url("img/icons/icon-home.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     background-color: transparent;
