@@ -182,7 +182,7 @@ img
 {
     width: 17px;
     height: 17px;
-    background-image: url("/img/icons/icon-search.svg");
+    background-image: url("img/icons/icon-search.svg");
     border: none;
     outline: none;
     background-color: transparent;
@@ -226,12 +226,12 @@ img
 
 .search-field:focus + .search-button
 {
-    background-image: url("/img/icons/icon-search_red.svg");
+    background-image: url("img/icons/icon-search_red.svg");
     opacity: 100%;
 }
 .search-button:active
 {
-    background-image: url("/img/icons/icon-search_red.svg");
+    background-image: url("img/icons/icon-search_red.svg");
     opacity: 100%;
 }
 /* ============================================================*/
@@ -283,7 +283,7 @@ a
     width: 14px;
     height: 16px;
     margin-right: 9px;
-    background-image: url("/img/icons/icon-bookmark.svg");
+    background-image: url("img/icons/icon-bookmark.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 30%;
@@ -295,7 +295,7 @@ a
     width: 15px;
     height: 15px;
     margin-right: 9px;
-    background-image: url("/img/icons/icon-basket.svg");
+    background-image: url("img/icons/icon-basket.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 30%;
@@ -413,7 +413,7 @@ a
     content: "";
     width: 19px;
     height: 19px;
-    background-image: url("/img/icons/icon-phone.svg");
+    background-image: url("img/icons/icon-phone.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     position: absolute;
@@ -492,7 +492,7 @@ a
     content: "";
     width: 20px;
     height: 17px;
-    background-image: url("/img/icons/icon-login.svg");
+    background-image: url("img/icons/icon-login.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 30%;
@@ -552,7 +552,7 @@ a
     content: "";
     width: 20px;
     height: 18px;
-    background-image: url("/img/icons/icon-user.svg");
+    background-image: url("img/icons/icon-user.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 30%;
@@ -562,7 +562,7 @@ a
 {
     width: 20px;
     height: 17px;
-    background-image: url("/img/icons/icon-logout.svg");
+    background-image: url("img/icons/icon-logout.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 30%;
@@ -779,7 +779,7 @@ a
     grid-row: 1;
     grid-column: 1;
 
-    background-image: url("/img/icons/features/icon-materials.svg");
+    background-image: url("img/icons/features/icon-materials.svg");
     background-repeat: no-repeat;
     background-size: 44px 65px;
     background-position: 213px 31px;
@@ -791,7 +791,7 @@ a
     grid-column: 3;
     background-color: var(--features-item-blue);
 
-    background-image: url("/img/icons/features/icon-instruments.svg");
+    background-image: url("img/icons/features/icon-instruments.svg");
     background-repeat: no-repeat;
     background-size: 75px 61px;
     background-position: 194px 34px;
@@ -803,7 +803,7 @@ a
     grid-column: 5;
     background-color: var(--features-item-pink);
 
-    background-image: url("/img/icons/features/icon-technics.svg");
+    background-image: url("img/icons/features/icon-technics.svg");
     background-repeat: no-repeat;
     background-size: 78px 62px;
     background-position: 191px 31px;
@@ -815,7 +815,7 @@ a
     grid-column: 5;
     background: var(--features-item-green);
 
-    background-image: url("/img/icons/features/icon-sales.svg");
+    background-image: url("img/icons/features/icon-sales.svg");
     background-repeat: no-repeat;
     background-size: 59px 72px;
     background-position: 196px 26px;
@@ -827,7 +827,7 @@ a
     grid-column: 5;
     background-color: var(--features-item-ginger);
 
-    background-image: url("/img/icons/features/icon-delivery.svg");
+    background-image: url("img/icons/features/icon-delivery.svg");
     background-repeat: no-repeat;
     background-size: 78px 63px;
     background-position: 191px 32px;
@@ -957,7 +957,7 @@ a
 
     width: 22px;
     height: 40px;
-    background-image: url("/img/icons/icon-slider-left.svg");
+    background-image: url("img/icons/icon-slider-left.svg");
     background-color: transparent;
     border: none;
     outline: none;
@@ -971,7 +971,7 @@ a
 
     width: 22px;
     height: 40px;
-    background-image: url("/img/icons/icon-slider-right.svg");
+    background-image: url("img/icons/icon-slider-right.svg");
     background-color: transparent;
     border: none;
     outline: none;
@@ -1815,7 +1815,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     width: 8px;
     height: 12px;
     background-color: transparent;
-    background-image: url("/img/icons/icon-right-small.svg");
+    background-image: url("img/icons/icon-right-small.svg");
 }
 
 .breadcrumbs-current::after 
@@ -2373,7 +2373,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     height: 15px;
     margin-right: 10px;
     margin-left: -10px;
-    background-image: url("/img/icons/icon-cart.svg");
+    background-image: url("img/icons/icon-cart.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 30%;
@@ -2728,7 +2728,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     content: "";
     width: 66px;
     height: 66px;
-    background-image: url("/img/icons/icon-basket-success.svg");
+    background-image: url("img/icons/icon-basket-success.svg");
 
     position: absolute;
     left: -66px;
