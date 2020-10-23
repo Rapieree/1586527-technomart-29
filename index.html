@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page index-html" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -12,6 +12,8 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
+
+
 <body class="page-body">
   <header class="header-container">
 
@@ -19,12 +21,12 @@
       <div class="container">
 
         <a class="header-logo" href="#">
-          <img class="header-logo-text" src="img/Logo-tech-text.svg" width="108" height="18" alt="Техномарт">
+          <img class="header-logo-text" src="img/logo-tech-text.svg" width="108" height="18" alt="Техномарт">
         </a>
 
-        <form class="search-container" method="post" action="https://echo.htmlacademy.ru">
-          <input class="search-field" type="text" name="search-text" placeholder="Поиск:">
-          <input class="search-button" type="submit" name="search-button" value="">
+        <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+          <input class="search-button" type="submit" value="">
+          <input class="search-text" type="text" id="search-text-field" name="search-text" placeholder="Поиск:">
         </form>
 
         <ul class="product-navigation-list">
@@ -64,7 +66,7 @@
 
           <div style="display:none;" class="authorization-success">
             <div class="username-wrapper">
-              <span class="username-text">Равшан Джамшутович</span>
+              <a href="profile.html" class="username-text">Равшан Джамшутович</a>
               <a href="blank.html" class="logout-link"></a>
             </div>
             <div class="extra-links-wrapper">
@@ -377,7 +379,7 @@
 
         <div class="footer-top-row">
           <a class="footer-logo" href="#">
-            <img src="img/Logo-text-footer.svg" width="138" height="23" alt="Техномарт">
+            <img src="img/logo-text-footer.svg" width="138" height="23" alt="Техномарт">
           </a>
 
           <ul class="footer-site-nav-list">
@@ -448,7 +450,7 @@
 
         <p class="footer-developer">
           Разработано -<br>
-          <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
 
       </div>
@@ -466,30 +468,30 @@
 
   <section class="modal modal-write-us">
     <h2 class="visually-hidden">Напишите нам письмо</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="write-us-top">
         <div class="write-us-item">
           <label for="name-field">Ваше имя:</label>
-          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+          <input class="write-us-name" type="text" name="name" id="name-field" placeholder="Имя Фамилия">
         </div>
         <div class="write-us-item">
           <label for="email-field">Ваш e-mail:</label>
-          <input type="email" name="email" id="email-field" placeholder="email@example.com">
+          <input class="write-us-email" type="email" name="email" id="email-field" placeholder="email@example.com">
         </div>
         <div class="write-us-item">
           <label for="textmessage-field">Текст письма:</label>
-          <textarea name="textmessage" id="textmessage-field" placeholder="В свободной форме"></textarea>
+          <textarea class="write-us-textmessage" name="textmessage" id="textmessage-field" placeholder="В свободной форме"></textarea>
         </div>
       </div>
       <div class="write-us-bottom">
-        <button class="red-button" type="submit">Отправить</button>
+        <button class="red-button write-us-button" type="submit">Отправить</button>
       </div>
     </form>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
-  <script src="js/map.js"></script>
 
+  <script src="js/script.js"></script>
 
 </body>
 

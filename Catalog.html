@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page catalog-html" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -18,26 +18,26 @@
     <div class="header-top">
       <div class="container">
 
-          <a class="header-logo" href="#">
+          <a class="header-logo" href="index.html">
             <img class="header-logo-text" src="img/Logo-tech-text.svg" width="108" height="18" alt="Техномарт">
           </a>
 
 
-        <form class="search-container"  method="post" action="https://echo.htmlacademy.ru">
-          <input class="search-field" type="text" name="search-text" placeholder="Поиск:">
-          <input class="search-button" type="submit" name="search-button" value="">
-        </form>
+          <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
+            <input class="search-button" type="submit" value="">
+            <input class="search-text" type="text" id="search-text-field" name="search-text" placeholder="Поиск:">
+          </form>
 
         <ul class="product-navigation-list">
-          <li class="bookmark-item">
+          <li>
             <a class="bookmark-link" href="blank.html">Закладки: 0</a>
           </li>
 
-          <li class="basket-item">
-            <a class="basket-link" href="blank.html">Корзина: 0</a>
+          <li>
+            <a class="basket-link" href="blank.html">Корзина: 10</a>
           </li>
 
-          <li class="to-order-item">
+          <li>
             <a class="to-order-link" href="">Оформить заказ</a>
           </li>
         </ul>
@@ -69,7 +69,7 @@
 
           <div class="authorization-success">
             <div class="username-wrapper">
-              <span class="username-text">Равшан Джамшутович</span>
+              <a href="profile.html" class="username-text">Равшан Джамшутович</a>
               <a href="blank.html" class="logout-link"></a>
             </div>
             <div class="extra-links-wrapper">
@@ -363,7 +363,7 @@
       <div class="container">
 
         <div class="footer-top-row">
-            <a class="footer-logo" href="#">
+            <a class="footer-logo" href="index.html">
               <img src="img/Logo-text-footer.svg" width="138" height="23" alt="Техномарт">
             </a>
 
@@ -435,7 +435,7 @@
 
         <p class="footer-developer">
           Разработано -<br>
-          <a href="https://htmlacademy.ru">htmlacademy.ru</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
 
       </div>
@@ -452,30 +452,7 @@
     
   </section>
 
-  <script>
-    BuyButton = document.querySelector(".products-item-button-buy");
-    modalBasket = document.querySelector(".modal-basket");
-    modalBasketClose = modalBasket.querySelector(".modal-close");
-    modalBasketContinue = modalBasket.querySelector(".continue-button");
-
-    BuyButton.addEventListener("click", function(evt)
-    {
-      evt.preventDefault();
-      modalBasket.classList.add("modal-show");
-    });
-
-    modalBasketClose.addEventListener("click", function(evt)
-    {
-      evt.preventDefault();
-      modalBasket.classList.remove("modal-show");
-    });
-
-    modalBasketContinue.addEventListener("click", function(evt)
-    {
-      evt.preventDefault();
-      modalBasket.classList.remove("modal-show");
-    });
-  </script>
+  <script src="js/script.js"></script>
 
 
 </body>
