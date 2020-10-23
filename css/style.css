@@ -1694,14 +1694,18 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 /* вторая строка топ футера*/
 .footer-contacts
 {
+    margin: 0;
+    padding: 1px;
+
+    width: 328px;
     font-size: 18px;
     line-height: 24px;
 
     color: var(--basic-white);
     margin-top: 22px;
     margin-left: 2px;
-    margin-right: 92px;
-    margin-bottom: 54px;
+    margin-right: 86px;
+    margin-bottom: 52px;
 
     flex-shrink: 0;
 }

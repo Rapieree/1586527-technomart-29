@@ -115,3 +115,107 @@ modalBasketContinue.addEventListener("click", function(evt)
 });
 }
 catch {}
+
+try
+{
+  let sliderItemsList = indexHtml.querySelectorAll(".features-slider-list .features-slider-item");
+  let sliderLeftButton = indexHtml.querySelector(".features-controls-button-left");
+  let sliderRightButton = indexHtml.querySelector(".features-controls-button-right");
+  let sliderIndicatorList = indexHtml.querySelectorAll(".features-slider-indicator-item");
+
+
+
+  function findActiveSlide()
+  {
+    for(let i = 0; i < sliderItemsList.length; i++)
+    {
+      if(sliderItemsList[i].classList.contains("features-slide-current"))
+      {
+        return i;
+      }
+    } 
+  }
+
+  let indexActiveSlide = findActiveSlide();
+
+  function changeSlide(indexSlide) 
+  {
+    sliderItemsList[indexActiveSlide].classList.remove("features-slide-current");
+    sliderIndicatorList[indexActiveSlide].classList.remove("indicator-current");
+    sliderItemsList[indexActiveSlide].classList.add("features-slide");
+
+    sliderItemsList[indexSlide].classList.add("features-slide-current");
+    sliderIndicatorList[indexSlide].classList.add("indicator-current");
+    sliderItemsList[indexSlide].classList.remove("features-slide");
+
+    indexActiveSlide = indexSlide;
+  }
+
+  sliderRightButton.addEventListener("click", function(evt)
+  {
+    if(indexActiveSlide == sliderItemsList.length-1)
+    {
+      changeSlide(0);
+    }
+    else
+    {
+      changeSlide(indexActiveSlide + 1);
+    }
+  });
+
+  sliderLeftButton.addEventListener("click", function(evt)
+  {
+    if(indexActiveSlide == 0)
+    {
+      changeSlide(sliderItemsList.length-1);
+    }
+    else
+    {
+      changeSlide(indexActiveSlide - 1);
+    }
+  });
+
+  for(let i = 0; i < sliderIndicatorList.length; i++)
+  {
+    sliderIndicatorList[i].addEventListener("click", function(evt)
+    {
+      changeSlide(i);
+    });
+  }
+}
+catch { }
+
+
+try
+{
+  let servicesItemList = indexHtml.querySelectorAll(".services-slider-item");
+  let servicesButtons = indexHtml.querySelectorAll(".services-controls-button");
+
+  let IndexServicesActive;
+
+  for(let i = 0; i < servicesButtons.length; i++)
+  {
+    servicesButtons[i].addEventListener("click", function(evt)
+    {
+      if(!servicesButtons[i].classList.contains("services-controls-current"))
+      {
+        servicesButtons.forEach(function (buttonItem)
+        {
+          buttonItem.classList.remove("services-controls-current");
+        });
+
+        servicesItemList.forEach(function (itemSlide)
+        {
+          itemSlide.classList.remove("services-slide-current");
+          itemSlide.classList.add("services-slide");
+        });
+
+
+        servicesButtons[i].classList.add("services-controls-current");
+        servicesItemList[i].classList.add("services-slide-current");
+        
+      }
+    });
+  }
+}
+catch { }
