@@ -2,6 +2,8 @@ const indexHtml = document.querySelector(".index-html");
 const catalogHtml = document.querySelector(".catalog-html"); 
 
 
+// Форма обратной связи
+// ============================================================
 
 try
 {
@@ -46,7 +48,8 @@ modalWriteUsForm.addEventListener("submit", function (evt) {
 }
 catch {}
 
-
+// Интерактивная карта
+// ============================================================
 try
 {
 
@@ -66,6 +69,9 @@ modalMapClose.addEventListener("click", function (evt) {
 }
 catch {}
 
+
+// Модальное окно с добавлением в корзину
+// ============================================================
 try 
 {
 
@@ -116,6 +122,10 @@ modalBasketContinue.addEventListener("click", function(evt)
 }
 catch {}
 
+
+
+// Слайдер блока особенности
+// ============================================================
 try
 {
   let sliderItemsList = indexHtml.querySelectorAll(".features-slider-list .features-slider-item");
@@ -186,6 +196,8 @@ try
 catch { }
 
 
+// Кнопки в Сервисе
+// ============================================================
 try
 {
   let servicesItemList = indexHtml.querySelectorAll(".services-slider-item");
@@ -219,3 +231,8 @@ try
   }
 }
 catch { }
+
+
+
+// 
+// ============================================================
