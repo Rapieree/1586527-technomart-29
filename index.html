@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html class="page index-html" lang="ru">
 
 <head>
@@ -12,23 +13,17 @@
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
-
-
 <body class="page-body">
   <header class="header-container">
-
     <div class="header-top">
       <div class="container">
-
-        <a class="header-logo" href="#">
+        <div class="header-logo">
           <img class="header-logo-text" src="img/logo-tech-text.svg" width="108" height="18" alt="Техномарт">
-        </a>
-
+        </div>
         <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
           <input class="search-button" type="submit" value="">
           <input class="search-text" type="text" id="search-text-field" name="search-text" placeholder="Поиск:">
         </form>
-
         <ul class="product-navigation-list">
           <li>
             <a class="bookmark-link" href="blank.html">Закладки: 0</a>
@@ -41,34 +36,27 @@
           </li>
         </ul>
       </div>
-
     </div>
-
     <div class="header-center">
       <div class="container">
-
         <p class="header-center-text">
           Интернет-магазин<br>строительных материалов<br> и инструментов для ремонта
         </p>
-
         <div class="header-contacts">
           <div class="header-contacts-number">
-            <a href="tel:+78125550555">+7 (812) 555-05-55
-</a>
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           </div>
           <a class="header-contacts-adress" href="#">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</a>
         </div>
-
         <div class="header-authorization">
           <div class="authorization-before">
             <a class="login-link" href="blank.html">Войти</a>
             <a class="registration-link" href="blank.html">Регистрация</a>
           </div>
-
           <div style="display:none;" class="authorization-success">
             <div class="username-wrapper">
-              <a href="blank.html" class="username-text">Равшан Джамшутович</a>
-              <a href="blank.html" class="logout-link"></a>
+              <a href="profile.html" class="username-text">Равшан Джамшутович</a>
+              <a href="logout.html" class="logout-link"></a>
             </div>
             <div class="extra-links-wrapper">
               <a href="blank.html" class="my-orders-link">Мои заказы</a>
@@ -76,100 +64,79 @@
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
-
     <nav class="container">
       <ul class="header-navigation-list">
         <li class="header-navigation-item"><a href="index.html">Главная</a></li>
         <li class="header-navigation-item"><a href="blank.html">Компания</a></li>
-        <li class="header-navigation-item"><a href="Catalog.html">Каталог</a></li>
+        <li class="header-navigation-item"><a href="catalog.html">Каталог</a></li>
         <li class="header-navigation-item"><a href="blank.html">Новости</a></li>
         <li class="header-navigation-item"><a href="blank.html">Спецпредложения</a></li>
         <li class="header-navigation-item"><a href="blank.html">Доставка</a></li>
         <li class="header-navigation-item"><a href="blank.html">Контакты</a></li>
       </ul>
     </nav>
-
   </header>
 
   <main class="page-index">
-
-
     <div class="container">
-
       <section class="features">
         <div class="features-item features-materials">
           <div class="red-new-label"></div>
           <h2>Материалы</h2>
           <a class="features-item-link" href="#">на любой вкус</a>
         </div>
-
         <div class="features-item features-instruments">
           <h2>Инструмент</h2>
           <a class="features-item-link" href="#">на все случаи</a>
         </div>
-
         <div class="features-item features-technics">
           <h2>Техника</h2>
           <a class="features-item-link" href="#">для стройки</a>
         </div>
-
         <figure class="features-slider">
-
           <ul class="features-slider-list">
-
-            
             <li class="features-slider-item features-slide">
               <h2 class="slider-title">Дрели</h2>
               <span class="slider-subtitle">Соседям на радость</span>
               <img src="img/features-slide-2.png" width="620" height="266" alt="Слайд-2">
             </li>
-
             <li class="features-slider-item features-slide-current">
               <h2 class="slider-title">Перфораторы</h2>
               <span class="slider-subtitle">Настоящие мужские игрушки</span>
               <img src="img/features-slide-1.png" width="620" height="266" alt="Слайд-1">
             </li>
           </ul>
-
           <div class="features-controls">
             <button class="features-controls-button-left" type="button"></button>
             <button class="features-controls-button-right" type="button"></button>
-            <a href="Catalog.html" class="features-button-catalog red-button">открыть каталог</a>
-
+            <a href="catalog.html" class="features-button-catalog red-button">открыть каталог</a>
             <div class="features-slider-indicator">
               <button class="features-slider-indicator-item" aria-label="Первый слайд" type="button"></button>
-              <button class="features-slider-indicator-item  indicator-current" aria-label="Второй слайд" type="button"></button>
+              <button class="features-slider-indicator-item  indicator-current" aria-label="Второй слайд"
+                type="button"></button>
             </div>
           </div>
-
         </figure>
-
         <div class="features-item features-sales">
           <h2>Скидки 50%</h2>
           <a class="features-item-link" href="#">на 350 товаров</a>
         </div>
-
         <div class="features-item features-delivery">
           <h2>Доставка</h2>
           <a class="features-item-link" href="#">бесплатно</a>
         </div>
-
       </section>
-
       <section class="pop-products">
         <div class="pop-header">
           <h2 class="pop-header-title">популярные товары:</h2>
           <a class="pop-header-button red-button" href="#">все популярные товары</a>
         </div>
-
         <ul class="products-list">
           <li class="products-item">
             <div class="products-item-hidden">
-              <button class="products-item-button-buy">Купить</button>
+              <a class="products-item-button-buy" href="basket.html">Купить</a>
               <button class="products-item-button-bookmark">В закладки</button>
             </div>
             <figure class="products-item-image">
@@ -181,7 +148,7 @@
           </li>
           <li class="products-item">
             <div class="products-item-hidden">
-              <button class="products-item-button-buy">Купить</button>
+              <a class="products-item-button-buy" href="basket.html">Купить</a>
               <button class="products-item-button-bookmark">В закладки</button>
             </div>
             <div class="red-new-label"></div>
@@ -194,7 +161,7 @@
           </li>
           <li class="products-item">
             <div class="products-item-hidden">
-              <button class="products-item-button-buy">Купить</button>
+              <a class="products-item-button-buy" href="basket.html">Купить</a>
               <button class="products-item-button-bookmark">В закладки</button>
             </div>
             <figure class="products-item-image">
@@ -206,7 +173,7 @@
           </li>
           <li class="products-item">
             <div class="products-item-hidden">
-              <button class="products-item-button-buy">Купить</button>
+              <a class="products-item-button-buy" href="basket.html">Купить</a>
               <button class="products-item-button-bookmark">В закладки</button>
             </div>
             <div class="red-new-label"></div>
@@ -217,16 +184,12 @@
             <p class="products-red-price">12500 Р.</p>
           </li>
         </ul>
-
       </section>
-
       <section class="pop-manufacturers">
-
         <div class="pop-header">
           <h2 class="pop-header-title">популярные производители:</h2>
           <a class="pop-header-button red-button" href="#">все производители</a>
         </div>
-
         <ul class="pop-manufacturers-list">
           <li class="pop-manufacturers-item">
             <a href="https://www.bosch.ru">
@@ -270,18 +233,14 @@
           </li>
         </ul>
       </section>
-
     </div>
-
     <section class="services">
       <div class="container">
         <h2 class="services-title">Сервисы</h2>
-
         <p class="services-subtitle">
           Хороший интернет-магазин отличается от плохого не только ценами!<br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
-
         <div class="services-slider">
           <div class="services-controls">
             <button class="services-controls-button services-controls-current" type="button">Доставка</button>
@@ -300,10 +259,9 @@
                 поднимая его на ваш этаж!<br>
               </p>
               <figure class="services-slider-image">
-              <img src="img/services-delivery.png" width="468" height="261" alt="Доставка">
+                <img src="img/services-delivery.png" width="468" height="261" alt="Доставка">
               </figure>
             </li>
-
             <li class="services-slider-item services-slide">
               <h3 class="services-slider-title">
                 Гарантия
@@ -319,13 +277,12 @@
                 <img src="img/services-guarantee.png" width="389" height="283" alt="Гарантия">
               </figure>
             </li>
-
             <li class="services-slider-item services-slide">
               <h3 class="services-slider-title">
                 Кредит
               </h3>
               <p class="services-slider-subtitle">
-                Залезть в долговую яму стало проще! 
+                Залезть в долговую яму стало проще!
                 Кредитные консультанты придут вам на помощь.
               </p>
               <button class="red-button credit-button">Отправить заявку</button>
@@ -334,11 +291,9 @@
               </figure>
             </li>
           </ul>
-
         </div>
       </div>
     </section>
-
     <div class="index-columns">
       <div class="container">
         <section class="about-company">
@@ -357,19 +312,19 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-
           <a class="about-company-button red-button" href="#">Подробнее о компании</a>
         </section>
-
         <section class="index-contacts">
           <h2>КОНТАКТЫ</h2>
           <p>
             Вы можете забрать товар сами,<br>
             заехав в наш офис:
           </p>
-          <img class="map-image" src="img/contacts-map.png" width="300" height="158"
-            alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-          <a class="red-button contacts-button-map" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+          <a href="writeus.html">
+            <img class="map-image" src="img/contacts-map.png" width="300" height="158"
+              alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          </a>
+          <a class="red-button contacts-button-map" href="map.html">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
         </section>
       </div>
     </div>
@@ -378,26 +333,22 @@
   <footer>
     <div class="footer-top">
       <div class="container">
-
         <div class="footer-top-row">
-          <a class="footer-logo" href="#">
+          <div class="footer-logo">
             <img src="img/logo-text-footer.svg" width="138" height="23" alt="Техномарт">
-          </a>
-
+          </div>
           <ul class="footer-site-nav-list">
             <li class="footer-site-nav-item"><a href="blank.html">Компания</a></li>
             <li class="footer-site-nav-item"><a href="blank.html">Новости</a></li>
-            <li class="footer-site-nav-item"><a href="Catalog.html">Каталог</a></li>
+            <li class="footer-site-nav-item"><a href="catalog.html">Каталог</a></li>
             <li class="footer-site-nav-item"><a href="blank.html">Доставка</a></li>
             <li class="footer-site-nav-item"><a href="blank.html">Контакты</a></li>
           </ul>
         </div>
-
-
         <div class="footer-top-row">
           <p class="footer-contacts">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-            +7 (812) 555-05-55
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
           </p>
           <ul class="footer-product-nav-list">
             <li class="footer-product-nav-item"><a href="blank.html">Материалы</a></li>
@@ -406,18 +357,14 @@
             <li class="footer-product-nav-item"><a href="blank.html">Спецпредложения</a></li>
           </ul>
         </div>
-
       </div>
     </div>
-
     <div class="footer-bottom">
       <div class="container">
-
         <p class="footer-copyright">
           © 2010–2019 Компания «Техномарт»<br>
           Все права защищены
         </p>
-
         <ul class="footer-social">
           <li>
             <a class="social-button" href="#">
@@ -444,17 +391,14 @@
             </a>
           </li>
         </ul>
-
         <p class="footer-feedback">
           Обратная связь:<br>
           <a href="#">mail@htmlacademy.ru</a>
         </p>
-
         <p class="footer-developer">
           Разработано -<br>
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
-
       </div>
     </div>
   </footer>
@@ -467,7 +411,6 @@
       title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
-
   <section class="modal modal-write-us">
     <h2 class="visually-hidden">Напишите нам письмо</h2>
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
@@ -482,7 +425,8 @@
         </div>
         <div class="write-us-item">
           <label for="textmessage-field">Текст письма:</label>
-          <textarea class="write-us-textmessage" name="textmessage" id="textmessage-field" placeholder="В свободной форме"></textarea>
+          <textarea class="write-us-textmessage" name="textmessage" id="textmessage-field"
+            placeholder="В свободной форме"></textarea>
         </div>
       </div>
       <div class="write-us-bottom">
@@ -491,10 +435,7 @@
     </form>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
-
-
   <script src="js/script.min.js"></script>
-
 </body>
 
 </html>
