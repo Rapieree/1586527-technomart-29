@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html class="page index-html" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
@@ -9,7 +7,7 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -22,6 +20,7 @@
         </div>
         <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
           <input class="search-button" type="submit" value="">
+          <label class="visually-hidden" for="search-text-field">Строка поиска</label>
           <input class="search-text" type="text" id="search-text-field" name="search-text" placeholder="Поиск:">
         </form>
         <ul class="product-navigation-list">
@@ -109,13 +108,12 @@
             </li>
           </ul>
           <div class="features-controls">
-            <button class="features-controls-button-left" type="button"></button>
-            <button class="features-controls-button-right" type="button"></button>
+            <button class="features-controls-button-left" type="button" aria-label="Предыдущий слайд"></button>
+            <button class="features-controls-button-right" type="button" aria-label="Следующий слайд"></button>
             <a href="catalog.html" class="features-button-catalog red-button">открыть каталог</a>
             <div class="features-slider-indicator">
               <button class="features-slider-indicator-item" aria-label="Первый слайд" type="button"></button>
-              <button class="features-slider-indicator-item  indicator-current" aria-label="Второй слайд"
-                type="button"></button>
+              <button class="features-slider-indicator-item  indicator-current" aria-label="Второй слайд" type="button"></button>
             </div>
           </div>
         </figure>
@@ -437,5 +435,4 @@
   </section>
   <script src="js/script.min.js"></script>
 </body>
-
 </html>
