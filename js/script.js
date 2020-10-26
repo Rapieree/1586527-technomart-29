@@ -9,8 +9,9 @@ try {
   let modalWriteUsName = modalWriteUs.querySelector(".write-us-name");
   let modalWriteUsEmail = modalWriteUs.querySelector(".write-us-email");
   let modalWriteUsTextMessage = modalWriteUs.querySelector(".write-us-textmessage");
-  let isStorageSupport = true;
   let storage = "";
+  let isStorageSupport = true;
+
 
   mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
