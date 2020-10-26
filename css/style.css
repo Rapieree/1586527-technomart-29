@@ -210,7 +210,7 @@ img
 }
 .search-form:focus-within .search-button
 {
-    background-image: url("../img/icons/icon-search_red.svg");
+    background-image: url("../img/icons/icon-search-red.svg");
     opacity: 100%;
 }
 
@@ -222,7 +222,7 @@ img
 
 .search-button:active
 {
-    background-image: url("../img/icons/icon-search_red.svg");
+    background-image: url("../img/icons/icon-search-red.svg");
     opacity: 100%;
 }
 
